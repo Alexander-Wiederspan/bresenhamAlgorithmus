@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<script src="bezier.js"></script>
+</head>
+<body>
+	<header>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="bezier.html">Bezier</a></li>
+		</ul>
+	</nav>
+	<div id="container" style="text-align:center">
+	<p>Dezimalzahlen mit Punkt. Koordinaten-Punkte im Format 6,3.</p>
+	<label>Faktor (u)</label>
+	<input type="text" value="0.25" id="faktor">
+	<br>
+	<label>P1 (Format: 6,3)</label>
+	<input type="text" value="0,0" id="p1">
+	<br>
+	<label>P2 (Format: 6,3)</label>
+	<input type="text" value="0,0" id="p2">
+	<br>
+	<label>P3 (Format: 6,3)</label>
+	<input type="text" value="0,0" id="p3">
+	<br>
+	<label>P4 (Format: 6,3)</label>
+	<input type="text" value="0,0" id="p4">
+	<br>
+	<input type="button" value="Berechnen" onclick="getBezier()">
+	</div>
+	<div style="text-align: center"id="ergebnisse">
+	<p style="font-size: 20px"><b>Punkte:</b></p>
+	</div>
+	<div style="text-align: center"id="rechenwege">
+	<p style="font-size: 20px"><b>Rechenwege: (allgemeineFormel: (1-u)*P1 + u*P2)</b></p>
+	</div>
+</body>
