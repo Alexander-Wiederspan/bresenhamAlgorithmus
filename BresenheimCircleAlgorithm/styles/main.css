@@ -1,0 +1,25 @@
+html, body {
+    margin: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/*Gets rid of Scrollbars*/
+canvas {
+    display: block;
+}
+
+textarea {
+    width: 400px;
+    height: 350px;
+}
+
+section {
+    margin-right: 25px;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}

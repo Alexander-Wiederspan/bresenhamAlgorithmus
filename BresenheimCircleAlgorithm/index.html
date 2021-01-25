@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Graphic Applications</title>
+    <script type="application/javascript" src="./initialCanvas/bresenheim_Kreis.js" defer async></script>
+    <script type="module" src="./initialCanvas/main.js" defer async></script>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+<section>
+    <label for="xm">X Mittelpunkt</label>
+    <input type="number" id="xm" value="500">
+    <br/><label for="ym">Y Mittelpunkt</label>
+    <input type="number" id="ym" value="224">
+    <br/>
+    <label for="x0">X Startpunkt</label>
+    <input type="number" id="x0" value="500">
+    <br/>
+    <label for="y0">Y Startpunkt</label>
+    <input type="number" id="y0" value="237">
+    <br/>
+    <label for="r">Radius</label>
+    <input type="number" id="r" value="13">
+    <br/>
+    <label for="n">Anzahl Pixel</label>
+    <input type="number" id="n" value="6">
+    <br/>
+    <input type="button" id="berechnen" value="berechnen">
+</section>
+<section>
+    <label for="ergebnisse">Ergebnis:</label>
+    <textarea id="ergebnisse" value=""></textarea>
+</section>
+<canvas id="canvas"></canvas>
+</body>
+</html>
