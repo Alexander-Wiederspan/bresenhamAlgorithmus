@@ -37,7 +37,7 @@ function getBezier(){
 			
 			// HTML Punkt
 			let node = document.createElement("P");
-			node.textContent = "P"+counter+" ("+getFraction(punkt[0])+", "+getFraction(punkt[1])+").";
+			node.textContent = "P"+counter+" ("+getFraction(punkt[0])+", "+getFraction(punkt[1])+") ODER P"+counter+" ("+parseFloat(punkt[0]).toFixed(2)+", "+parseFloat(punkt[1]).toFixed(2)+")";
 			document.getElementById("ergebnisse").appendChild(node);
 			
 			// HTML Rechenweg
@@ -61,7 +61,7 @@ function bezier(startPunkt, endPunkt, faktor) {
 		berechnung([startPunkt[1], endPunkt[1]], faktor)];
 }
 function berechnung(point, u) {
-	rechenweg += punktString+ ": (1-"+u+") * "+getFraction(point[0])+" + "+u+" * "+getFraction(point[1]) +" = "+ getFraction((1-u)*point[0] + u*point[1])+ ". ";
+	rechenweg += punktString+ ": (1-"+u+") * "+parseFloat(point[0]).toFixed(2)+" + "+u+" * "+parseFloat(point[1]).toFixed(2) +" = "+ parseFloat((1-u)*point[0] + u*point[1]).toFixed(2)+ ". ";
 	return (1-u)*point[0] + u*point[1];
 }
 
